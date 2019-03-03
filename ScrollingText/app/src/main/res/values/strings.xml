@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Scrolling Text</string>
+    <string name="articel_tittle">Articel Tittle</string>
+    <string name="articel_subtittle">Articel Subtittle</string>
+    <string name="articel_text">Gunakan	teks	yang	disediakan	untuk	string
+        article_text		dalam	file	strings.xml	dari	[aplikasi	ScrollingText]	yang
+        telah	diselesaikan
+        (https://github.com/google-developer-training/android-fundamentals/tree/master/ScrollingText),
+        atau gunakan	teks	generik	Anda	sendiri. <b>www.google.com</b> www.rockument.com. \n\n
+        Anda	bisa	menempel	dan	menyalin	kalimat	yang	sama	berulang	kali,
+        selama hasilnya	adalah	bagian	panjang	teks	yang	tidak	akan	pas	di	layar.
+        Perhatikan	yang	berikut	ini	(lihat	gambar	di	bawah sebagai	contoh):\n\n
+        i.	<b>Saat	Anda	memasukkan	atau	menempel	teks	di	file	strings.xml,
+        baris	teks	tidak	membungkus	ke	baris berikutnya,	melainkan	meluas	melebihi
+        margin	kanan.	Ini	adalah	perilaku	yang	benar,	setiap	baris	teks	baru	yang
+            dimulai	di	margin	kiri	mewakili	seluruh	paragraf.</b>\n\n
+        ii. <i>Masukkan	(\n)	untuk	mewakili	akhir	sebuah	baris,	dan	\nlainnya	untuk
+        mewakili	baris	kosong. Mengapa?*	Anda	perlu	menambahkan	karakter	akhir-baris
+        untuk	menjaga	paragraf	agar	tidak	bertabrakan	satu dan	lainnya.\n
+        Tips:	Jika	Anda	ingin	melihat	teks	dibungkus	dalam	strings.xml,	Anda
+        bisa	menekan	Return	untuk	memasukkan akhiran	baris	keras,	atau	memformat
+            teksnya	dulu	di	editor	teks	dengan	akhiran	baris	keras.</i> \n\n
+        iii.	Jika	ada	apostrof		dalam	teks,	Anda	harus	melakukan	escape
+        dengan	mengawalinya	dengan	backslash.	Jika Anda	memiliki	tanda	kutip
+        ganda	dalam	teks,	Anda	harus	melakukan	escape.	Anda	juga	harus
+        melakukan escape	pada	karakter	non-ASCII	lainnya.	Lihat	bagian
+        Pemformatan	dan	Penataan	gaya
+        (https://developer.android.com/guide/topics/resources/string-resource.html#FormattingAndStyling)
+        dari	Sumber Daya	String	untuk	detail	selengkapnya.\n\n
+        iv.	Masukkan	tag	HTML	dan		di	sekeliling	kata	yang	harus	dicetak	tebal.\n\n
+        v.	Masukkan	HTML	(/b) dan	tag		di	sekeliling	kata	yang	harus	dicetak	miring.
+        Namun	perhatikan	bahwa	jika	Anda menggunakan	apostrof	dengan	frasa	yang	dimiringkan,
+        Anda	harus	menggantinya	dengan	apostrof	lurus.\n\n
+        vi.	Jika	Anda	bisa	menggabungkan cetak	tebal	dan	miring	dengan	menggabungkan
+        tag-nya,	seperti	dalam katakata Tag	HTML	lain	diabaikan.\n\n
+        vii.	Kurung	seluruh	teks	di	dalam pada	file	strings.xml.
+
+    </string>
+    <string name="comment">Add Comment</string>
+</resources>
