@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cunter Score</string>
+    <string name="name_team1">Indonesia</string>
+    <string name="plus">+1</string>
+
+    <string name="reset_button">Reset</string>
+
+    <string name="score1">0</string>
+    <string name="button1">+1</string>
+    <string name="name_team2">Malaysia</string>
+    <string name="score2">0</string>
+    <string name="button2">+1</string>
+    <string name="team1">indonesia</string>
+    <string name="team2">malaysia</string>
+</resources>

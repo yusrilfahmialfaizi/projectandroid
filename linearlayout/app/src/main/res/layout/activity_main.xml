@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_margin_horizontal"
+    android:paddingTop="@dimen/activity_margin_vertical"
+    android:paddingLeft="@dimen/activity_margin_horizontal"
+    android:paddingBottom="@dimen/activity_margin_vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_hellotoast"
+        android:textColor="@android:color/white"
+        android:onClick="showToast"/>
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myBackgroundColor"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="@dimen/count_text_size"
+        android:text="@string/count_initial_value"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_count"
+        android:textColor="@android:color/white"
+        android:onClick="countUp"/>
+</LinearLayout>

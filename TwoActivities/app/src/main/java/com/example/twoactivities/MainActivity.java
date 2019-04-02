@@ -34,35 +34,35 @@ public class MainActivity extends AppCompatActivity {
         mReplyTextView = (TextView) findViewById(R.id.textmessage_reply);
     }
 
-    @Override
-    public  void onStart(){
-        super.onStart();
-        Log.d(LOG_TAG, "onStart");
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.d(LOG_TAG, "onPause");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d(LOG_TAG, "onRestart");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(LOG_TAG, "onStop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(LOG_TAG, "onDestroy");
-    }
+//    @Override
+//    public  void onStart(){
+//        super.onStart();
+//        Log.d(LOG_TAG, "onStart");
+//    }
+//
+//    @Override
+//    public void onPause() {
+//        super.onPause();
+//        Log.d(LOG_TAG, "onPause");
+//    }
+//
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        Log.d(LOG_TAG, "onRestart");
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Log.d(LOG_TAG, "onStop");
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        Log.d(LOG_TAG, "onDestroy");
+//    }
 
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button clicked");
@@ -72,14 +72,15 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivityForResult(intent, TEXT_REQUEST);
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == TEXT_REQUEST){
             if (resultCode == RESULT_OK){
-                String reply = data.getStringExtra(SecondActivity.EXTRA_REPLY);
-
+                String reply =
+                        data.getStringExtra(SecondActivity.EXTRA_REPLY);
                 mReplyHeadTextView.setVisibility(View.VISIBLE);
                 mReplyTextView.setText(reply);
                 mReplyTextView.setVisibility(View.VISIBLE);

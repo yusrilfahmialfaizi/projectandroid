@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#a3fff2"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/reset_button"
+        android:textSize="35sp"
+        android:onClick="reset"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="com.example.cunterscore.MainActivity">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/name_team1"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:src="@drawable/indonesia"
+                android:contentDescription="@string/team1" />
+
+            <TextView
+                android:id="@+id/score_team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="@string/score1"
+                android:textSize="50sp"/>
+
+            <Button
+                android:id="@+id/button_team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button1"
+                android:background="@android:color/holo_red_light"
+                android:textSize="20sp"
+                android:onClick="scoreteam1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_green_dark"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_team2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/name_team2"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:src="@drawable/malaysia"
+                android:contentDescription="@string/team2" />
+
+            <TextView
+                android:id="@+id/score_team2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="@string/score2"
+                android:textSize="50sp"/>
+
+            <Button
+                android:id="@+id/button_team2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button2"
+                android:background="#0c00ff"
+                android:textSize="20sp"
+                android:onClick="scoreteam2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

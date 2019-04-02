@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello Compact</string>
+    <string name="text">Yusril Fahmi Al Faizi</string>
+    <string name="change">Change color</string>
+    <string name="hint">Enter your text</string>
+    <string name="button_set">Set</string>
+</resources>

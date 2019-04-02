@@ -23,7 +23,7 @@
             android:parentActivityName="com.example.TwoActivities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTICITY"
-                android:value="com.example.android.twoacticity.MainActivity" />
+                android:value="com.example.android.twoactivities.MainActivity" />
         </activity>
 
 

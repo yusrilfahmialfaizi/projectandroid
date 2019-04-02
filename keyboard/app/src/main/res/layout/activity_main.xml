@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_margin_vertical"
+    android:paddingLeft="@dimen/activity_margin_horizontal"
+    android:paddingTop="@dimen/activity_margin_vertical"
+    android:paddingRight="@dimen/activity_margin_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_toLeftOf="@id/button_text"
+        android:layout_toStartOf="@id/button_text"
+        android:hint="@string/enter_your_text_here"/>
+    <Button
+        android:id="@+id/button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showText"
+        android:text="@string/buttonshow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/edit_Pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_toLeftOf="@id/button_Pass"
+        android:layout_toStartOf="@id/button_Pass"
+        android:layout_below="@id/edit_Text"
+        android:hint="@string/enter_your_password_here"/>
+    <Button
+        android:id="@+id/button_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showPass"
+        android:text="@string/buttonshow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button_text"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_toLeftOf="@id/button_Email"
+        android:layout_toStartOf="@id/button_Email"
+        android:layout_below="@id/edit_Pass"
+        android:hint="@string/enter_your_Email_here"/>
+    <Button
+        android:id="@+id/button_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showEmail"
+        android:text="@string/buttonshow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button_Pass"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_toLeftOf="@id/button_phone"
+        android:layout_toStartOf="@id/button_phone"
+        android:layout_below="@id/edit_Email"
+        android:hint="@string/enter_your_phone_here"/>
+    <Button
+        android:id="@+id/button_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showPhone"
+        android:text="@string/buttonshow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button_Email"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
